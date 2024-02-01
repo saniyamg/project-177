@@ -1,0 +1,440 @@
+
+<!-- saved from url=(0064)http://ec2-3-108-196-161.ap-south-1.compute.amazonaws.com/editor -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Editor</title>
+
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./Editor 177_files/bootstrap.min.css">
+    <script src="./Editor 177_files/jquery.min.js.download"></script>
+    <script src="./Editor 177_files/bootstrap.min.js.download"></script>
+
+    <!-- Code Editor -->
+    <script src="./Editor 177_files/codemirror.min.js.download" integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./Editor 177_files/codemirror.min.css" integrity="sha512-6sALqOPMrNSc+1p5xOhPwGIzs6kIlST+9oGWlI4Wwcbj1saaX9J3uzO3Vub016dmHV7hM+bMi/rfXLiF5DNIZg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Sweet Alert -->
+    <script src="./Editor 177_files/sweetalert2.min.js.download"></script>
+    <link rel="stylesheet" href="./Editor 177_files/sweetalert2.min.css">
+
+    <!-- Datatable -->
+    <link rel="stylesheet" type="text/css" href="./Editor 177_files/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="./Editor 177_files/jquery.dataTables.js.download"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-5 text-white">
+                <h3>Tables Available -</h3>
+                <ol>
+                    <li>customers</li>
+                    <li>suppliers</li>
+                    <li>company_products</li>
+                    <li>company_orders</li>
+                    <li>order_items</li>
+                </ol>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-5">
+                <textarea id="editor" style="display: none;"></textarea><div class="CodeMirror cm-s-default" translate="no"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 158.667px; left: 210.604px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 17px;"><div style="min-width: 1px; height: 416px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="right: 17px; left: 30px; display: block;"><div style="height: 100%; min-height: 1px; width: 1133px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true" style="display: block; height: 17px; width: 17px;"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -17px; border-right-width: 33px; min-height: 416px; min-width: 1133px; padding-right: 17px; padding-bottom: 17px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>10</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 179.938px; top: 288px; height: 24px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">WITH query1 AS (select customers.last_name as customer_last_name,customers.phone as customer_phone,company_orders.id as order_id</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">FROM customers</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">INNER JOIN</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">company_orders ON customers.id=company_orders.customer_id),</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">query2 AS (select company_products.name as product_name,suppliers.contact_name as supplier_contact_name,order_items.order_id</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">FROM order_items INNER JOIN company_products ON company_products.id=order_items.product_id</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">INNER JOIN suppliers ON suppliers.id=company_products.supplier_id)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">SELECT DISTINCT </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">query1.customer_last_name,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">query1.customer_phone,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">query2.product_name,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">query2.supplier_contact_name</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">FROM query1 INNER JOIN </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">query2 ON </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">query1.order_id=query2.order_id </span></pre></div></div></div></div></div></div><div style="position: absolute; height: 33px; width: 1px; border-bottom: 17px solid transparent; top: 416px;"></div><div class="CodeMirror-gutters" style="height: 466px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-5 text-center">
+                <button class="execute-btn">Execute</button>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-5 mb-5 p-5" id="result_box">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h1>Output</h1>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 mt-3" id="result_div">
+                                            <div id="result_table_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="result_table_length"><label>Show <select name="result_table_length" aria-controls="result_table" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="result_table_filter" class="dataTables_filter" style="display: none;"><label>Search:<input type="search" class="" placeholder="" aria-controls="result_table"></label></div><table id="result_table" class="dataTable no-footer" aria-describedby="result_table_info">
+                                                <thead>
+                                                    <tr><th class="sorting sorting_asc" tabindex="0" aria-controls="result_table" rowspan="1" colspan="1" aria-sort="ascending" aria-label="customer_last_name: activate to sort column descending" style="width: 203.271px;">customer_last_name</th><th class="sorting" tabindex="0" aria-controls="result_table" rowspan="1" colspan="1" aria-label="customer_phone: activate to sort column ascending" style="width: 168.802px;">customer_phone</th><th class="sorting" tabindex="0" aria-controls="result_table" rowspan="1" colspan="1" aria-label="product_name: activate to sort column ascending" style="width: 297.927px;">product_name</th><th class="sorting" tabindex="0" aria-controls="result_table" rowspan="1" colspan="1" aria-label="supplier_contact_name: activate to sort column ascending" style="width: 230px;">supplier_contact_name</th></tr>
+                                                </thead>
+                                                <tbody>
+                                                    
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+
+                                                            
+                                                        
+                                                <tr class="odd">
+                                                                <td class="sorting_1">Afonso</td>
+<td>(11)555-7647</td>
+<td>Ipoh Coffee</td>
+<td>Chandra Leka</td>
+                                                            </tr><tr class="even">
+                                                                <td class="sorting_1">AngelPaolino</td>
+<td>(5)555-2933</td>
+<td>Thüringer Rostbratwurst</td>
+<td>Martin Bein</td>
+                                                            </tr><tr class="odd">
+                                                                <td class="sorting_1">AngelPaolino</td>
+<td>(5)555-2933</td>
+<td>Mozzarella di Giovanni</td>
+<td>Elio Rossi</td>
+                                                            </tr><tr class="even">
+                                                                <td class="sorting_1">AngelPaolino</td>
+<td>(5)555-2933</td>
+<td>Spegesild</td>
+<td>Niels Petersen</td>
+                                                            </tr><tr class="odd">
+                                                                <td class="sorting_1">AngelPaolino</td>
+<td>(5)555-2933</td>
+<td>Ravioli Angelo</td>
+<td>Giovanni Giudici</td>
+                                                            </tr><tr class="even">
+                                                                <td class="sorting_1">Ashworth</td>
+<td>(171)555-1212</td>
+<td>Singaporean Hokkien Fried Mee</td>
+<td>Chandra Leka</td>
+                                                            </tr><tr class="odd">
+                                                                <td class="sorting_1">Batista</td>
+<td>(21)555-4252</td>
+<td>Gula Malacca</td>
+<td>Chandra Leka</td>
+                                                            </tr><tr class="even">
+                                                                <td class="sorting_1">Batista</td>
+<td>(21)555-4252</td>
+<td>Tofu</td>
+<td>Mayumi Ohno</td>
+                                                            </tr><tr class="odd">
+                                                                <td class="sorting_1">Bennett</td>
+<td>(198)555-8888</td>
+<td>Scottish Longbreads</td>
+<td> Ltd.</td>
+                                                            </tr><tr class="even">
+                                                                <td class="sorting_1">Bennett</td>
+<td>(198)555-8888</td>
+<td>Flotemysost</td>
+<td>Beate Vileid</td>
+                                                            </tr></tbody>
+                                            </table><div class="dataTables_info" id="result_table_info" role="status" aria-live="polite">Showing 1 to 10 of 78 entries</div><div class="dataTables_paginate paging_simple_numbers" id="result_table_paginate"><a class="paginate_button previous disabled" aria-controls="result_table" data-dt-idx="0" tabindex="-1" id="result_table_previous">Previous</a><span><a class="paginate_button current" aria-controls="result_table" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="result_table" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="result_table" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="result_table" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="result_table" data-dt-idx="5" tabindex="0">5</a><span class="ellipsis">…</span><a class="paginate_button " aria-controls="result_table" data-dt-idx="6" tabindex="0">8</a></span><a class="paginate_button next" aria-controls="result_table" data-dt-idx="7" tabindex="0" id="result_table_next">Next</a></div></div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    let textarea = document.getElementById("editor");
+    var editor = CodeMirror.fromTextArea(textarea, {
+        lineNumbers: true
+    });
+
+    $(function(){
+        $(".execute-btn").click(function(){
+            if (editor.getValue()) {
+                let code = editor.getValue().replace("\n", " ");
+                let data = {
+                    "code": code
+                }
+                $.ajax({
+                    url: "/api/execute",
+                    type: "post",
+                    data: JSON.stringify(data),
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    success: function (result) {
+                        if (result.status === "no_result") {
+                            $("#result_div").empty();
+                            $("#result_div").html(`<p>No result found!</p>`)
+                        } else {
+                            $("#result_div").empty();
+                            let html = `
+                                            <table id="result_table">
+                                                <thead>
+                                                    <tr>
+                                                        ${result.keys.map(key => (
+                                                            `<th>${key}</th>`
+                                                        )).join("\n")}
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    ${result.values.map(value => {
+                                                        return `
+                                                            <tr>
+                                                                ${value.map(item => (
+                                                                    `<td>${item}</td>`
+                                                                )).join("\n")}
+                                                            </tr>
+                                                        `
+                                                    }).join("\n")}
+                                                </tbody>
+                                            </table>
+                            `
+                            $("#result_div").append(html)
+                            $('#result_table').DataTable();
+                            $("#result_table_filter").css("display", "none");
+                        }
+                    },
+                    error: function (result) {
+                        $("#result_div").empty();
+                        $("#result_div").html(`<p style="color: red;">${result.responseJSON.message}</p>`)
+                    }
+                })
+            } else {
+                Swal.fire(
+                    'Invalid',
+                    "No query to execute!",   
+                    'error'
+                )
+            }
+        })
+    })
+</script>
+    <style>
+    body {
+        background-color: #5032b1;
+    }
+    .CodeMirror {
+        border: 1px solid black;
+    }
+    .execute-btn {
+        padding: 1em;
+        border: none;
+        width: 30%;
+        font-size: 1.3em;
+        border-radius: 1em;
+        box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.5);
+    }
+    #result_box {
+        background-color: white;
+        min-height: 30vh;
+    }
+</style>
+
+
+</body></html>
